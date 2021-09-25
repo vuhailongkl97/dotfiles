@@ -21,7 +21,7 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#3f444a"))
  '(objed-cursor-color "#ff6c6b")
  '(package-selected-packages
-   '(doom-modeline helm-fuzzy-find helm-fuzzy evil-multiedit use-package))
+   '(org-super-agenda doom-modeline helm-fuzzy-find helm-fuzzy evil-multiedit use-package))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(rustic-ansi-faces
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
