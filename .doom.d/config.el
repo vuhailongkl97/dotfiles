@@ -20,7 +20,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-monokai-pro)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -65,15 +65,6 @@
         (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
         (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
         (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)))
-
-;; (add-hook 'c++-mode-hook 'irony-mode)
-;; (add-hook 'c-mode-hook 'irony-mode)
-;; (add-hook 'objc-mode-hook 'irony-mode)
-;;(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-
-;; (setenv "PATH" (concat (getenv "PATH") ":~/.fzf/bin"))
-;; (setq exec-path (append exec-path '(":~/.fzf/bin")))
-;; (add-hook 'prog-mode-hook 'linum-on)
 
 (require 'modern-cpp-font-lock)
 (modern-c++-font-lock-global-mode t)

@@ -8,7 +8,7 @@
  '(ansi-color-names-vector
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
  '(custom-safe-themes
-   '("0d01e1e300fcafa34ba35d5cf0a21b3b23bc4053d388e352ae6a901994597ab1" "8146edab0de2007a99a2361041015331af706e7907de9d6a330a3493a541e5a6" default))
+   '("4133d2d6553fe5af2ce3f24b7267af475b5e839069ba0e5c80416aa28913e89a" "b0e446b48d03c5053af28908168262c3e5335dcad3317215d9fdeb8bac5bacf9" "6f4421bf31387397f6710b6f6381c448d1a71944d9e9da4e0057b3fe5d6f2fad" "e19ac4ef0f028f503b1ccafa7c337021834ce0d1a2bca03fcebc1ef635776bea" "8d7b028e7b7843ae00498f68fad28f3c6258eda0650fe7e17bfb017d51d0e2a2" "0b3aee906629ac7c3bd994914bf252cf92f7a8b0baa6d94cb4dfacbd4068391d" "cbdf8c2e1b2b5c15b34ddb5063f1b21514c7169ff20e081d39cf57ffee89bc1e" "a9a67b318b7417adbedaab02f05fa679973e9718d9d26075c6235b1f0db703c8" "0d01e1e300fcafa34ba35d5cf0a21b3b23bc4053d388e352ae6a901994597ab1" "8146edab0de2007a99a2361041015331af706e7907de9d6a330a3493a541e5a6" default))
  '(exwm-floating-border-color "#191b20")
  '(fci-rule-color "#5B6268")
  '(highlight-tail-colors
@@ -21,10 +21,11 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#3f444a"))
  '(objed-cursor-color "#ff6c6b")
  '(package-selected-packages
-   '(org-super-agenda doom-modeline helm-fuzzy-find helm-fuzzy evil-multiedit use-package))
+   '(theme-magic org-super-agenda doom-modeline helm-fuzzy-find helm-fuzzy evil-multiedit use-package))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(rustic-ansi-faces
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
+ '(theme-magic-export-theme-mode t)
  '(vc-annotate-background "#282c34")
  '(vc-annotate-color-map
    (list
