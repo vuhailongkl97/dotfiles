@@ -336,3 +336,7 @@
          ;; match any of these groups, with the default order position of 99
          )))
   (org-agenda nil "a"))
+
+(map! :leader
+      :desc "kill buffer"
+      "b d" 'kill-buffer)
