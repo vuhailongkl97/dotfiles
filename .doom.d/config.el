@@ -347,3 +347,5 @@
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
 (setq whitespace-style '(trailing tabs newline tab-mark newline-mark))
+
+(setq org-startup-with-inline-images t)
