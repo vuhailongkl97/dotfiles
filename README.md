@@ -1,3 +1,3 @@
 # dotfiles
 
-apply config in dotfile to currently system : stow -R --adopt .
+apply the config in dotfiles to current system : stow -R --adopt .
