@@ -52,3 +52,5 @@
 (package! helm-fuzzy-find)
 (use-package magit-delta
   :hook (magit-mode . magit-delta-mode))
+
+(use-package ox-reveal)

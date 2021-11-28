@@ -349,3 +349,26 @@
 (setq whitespace-style '(trailing tabs newline tab-mark newline-mark))
 (setq org-src-fontify-natively t)
 (setq org-startup-with-inline-images t)
+
+(require 'flycheck-rtags)
+
+(defun my-flycheck-rtags-setup ()
+  (flycheck-select-checker 'rtags)
+  (setq-local flycheck-highlighting-mode nil) ;; RTags creates more accurate overlays.
+  (setq-local flycheck-check-syntax-automatically nil))
+;; c-mode-common-hook is also called by c++-mode
+(add-hook 'c-mode-common-hook #'my-flycheck-rtags-setup)
+
+(require 'rtags)
+(require 'company-rtags)
+
+(setq rtags-completions-enabled t)
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends 'company-rtags))
+(setq rtags-autostart-diagnostics t)
+
+;; for slide show C-c C-e R R
+(require 'ox-reveal)
+
+(add-to-list 'warning-suppress-types '(iedit))

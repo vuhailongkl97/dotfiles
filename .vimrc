@@ -92,9 +92,6 @@ runtime plugin/tagfinder.vim
 DefineTagFinder Class c,class
 DefineTagFinder Func f,function
 
-noremap h <NOP>
-noremap l <NOP>
-
 " quick open , write files
 nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>w :w<CR>
