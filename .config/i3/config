@@ -181,4 +181,4 @@ bar {
 }
 
 bindsym $mod+Shift+x exec i3lock --color=808080
-exec_alwaws feh --bg-scale /home/long/Pictures/wallpapers.jpg
+exec_always feh --bg-scale /home/long/Pictures/wallpapers.jpg
