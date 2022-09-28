@@ -1,5 +1,5 @@
 export ZSH=~/.oh-my-zsh
-HOME_USER="longkl"
+HOME_USER="long"
 WORK_USER="vhlong"
 
 ZSH_THEME="rkj-repos"
@@ -35,22 +35,22 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 if [ "$(whoami)" = "$HOME_USER" ]; then
-    # if [ -z $TMUX ]; then
-    #         if tmux has -t work > /dev/null 2>&1; then
-    #                 if [ 0 -eq `tmux lsc -t work 2>/dev/null | wc -l` ]; then
-    #                         echo attach
-    #                         tmux -2 attach -t work
+     if [ -z $TMUX ]; then
+             if tmux has -t work > /dev/null 2>&1; then
+                     if [ 0 -eq `tmux lsc -t work 2>/dev/null | wc -l` ]; then
+                             echo attach
+                             tmux -2 attach -t work
 
-    #                 else
-    #                         echo "create new. work window is working now "
-    #                         tmux -2 new
-    #                 fi
-    #         else
-    #                 echo "create new session with work window"
-    #                 tmux -2 new -t work
-    #         fi
-    # fi
-    # export TMUX_AUTO_STARTUP=1
+                     else
+                             echo "create new. work window is working now "
+                             tmux -2 new
+                     fi
+             else
+                     echo "create new session with work window"
+                     tmux -2 new -t work
+             fi
+     fi
+     export TMUX_AUTO_STARTUP=1
 fi
 
 if [ "$(whoami)" = "$WORK_USER" ]; then
@@ -79,3 +79,12 @@ then
     unfunction preexec
     PS1='$ '
 fi
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+
+export GOPATH=$HOME/working/golib
+export PATH=$PATH:$GOPATH/bin
+export GOPATH=$GOPATH:$HOME/working/go-code
+alias lg=lazygit
+
+alias x86_64-elf-ld=ld 
