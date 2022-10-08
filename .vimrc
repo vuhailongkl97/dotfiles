@@ -1,3 +1,4 @@
+. "~/.markdown.conf"
 set laststatus=2
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -11,6 +12,7 @@ call plug#begin()
 " Make sure you use single quotes
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 Plug 'junegunn/vim-easy-align'
 Plug 'vim-syntastic/syntastic'
@@ -133,7 +135,7 @@ function! ShowDocumentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
@@ -232,3 +234,5 @@ set hlsearch
 set number
 set relativenumber
 set mouse=a
+set autoread
+set autoindent
