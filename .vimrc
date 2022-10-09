@@ -1,6 +1,6 @@
-source ~/.vimplug.conf
-source ~/.cocnvim.conf
-source ~/.markdown.conf
+source ~/.vundle.vim
+source ~/.coc.vim
+source ~/.markdown.vim
 
 nnoremap <Leader>cf :<C-u>ClangFormat<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
