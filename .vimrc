@@ -14,6 +14,7 @@ set relativenumber
 set mouse=a
 set autoread
 set autoindent
+set tabstop=4
 
 color desert
 set cursorline
