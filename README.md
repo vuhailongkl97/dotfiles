@@ -7,4 +7,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     
 2. apply the config in dotfiles to current system : stow -R --adopt .
 
-
+# Note
+for having greatest experience you should install some packages:
+```
+1. ctags for fzf.Tags
+2. ripgrep for fzf.Rg
+```
