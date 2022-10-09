@@ -1,8 +1,8 @@
-. "~/.markdown.conf"
-. "~/.vimplug.conf"
-. "~/.cocnvim.conf"
-set laststatus=2
+source ~/.vimplug.conf
+source ~/.cocnvim.conf
+source ~/.markdown.conf
 
+set laststatus=2
 nnoremap <Leader>f :<C-u>ClangFormat<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
