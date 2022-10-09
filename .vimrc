@@ -2,8 +2,7 @@ source ~/.vimplug.conf
 source ~/.cocnvim.conf
 source ~/.markdown.conf
 
-set laststatus=2
-nnoremap <Leader>f :<C-u>ClangFormat<CR>
+nnoremap <Leader>cf :<C-u>ClangFormat<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -22,3 +21,15 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 
 nmap <silent> gw <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
+
+" PLUGIN: FZF
+nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <Leader>/ :BLines<CR>
+nnoremap <silent> <Leader>' :Marks<CR>
+nnoremap <silent> <Leader>g :Commits<CR>
+nnoremap <silent> <Leader>H :Helptags<CR>
+nnoremap <silent> <Leader>hh :History<CR>
+nnoremap <silent> <Leader>h: :History:<CR>
+nnoremap <silent> <Leader>h/ :History/<CR>
