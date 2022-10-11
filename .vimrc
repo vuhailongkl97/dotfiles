@@ -18,7 +18,7 @@ set tabstop=4
 
 color desert
 set cursorline
-hi CursorLine term=bold cterm=underline,bold guibg=Grey40 gui=underline
+hi CursorLine term=bold cterm=bold guibg=Grey40 gui=bold
 hi Search cterm=bold ctermfg=red ctermbg=black
 
 nmap <silent> gw <Plug>(easymotion-overwin-f2)
@@ -37,3 +37,8 @@ nnoremap <silent> <Leader>h: :History:<CR>
 nnoremap <silent> <Leader>h/ :History/<CR>
 
 let g:airline#extensions#ale#enabled = 1
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+set foldmethod=syntax
