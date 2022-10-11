@@ -182,3 +182,5 @@ bar {
 
 bindsym $mod+Shift+x exec i3lock --color=808080
 exec_always feh --bg-scale /home/long/Pictures/wallpapers.jpg
+exec nitrogen --restore
+exec picom -b
