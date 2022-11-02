@@ -49,6 +49,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'easymotion/vim-easymotion'
 
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 " Initialize plugin system
 call plug#end()
