@@ -1,0 +1,15 @@
+[user]
+	email = vuhailongkl97@gmail.com
+	name = long.vu
+#[url "git@github.com:"]
+#	insteadOf = https://github.com/
+[net]
+	git-fetch-with-cli = true
+[pull]
+	rebase = true
+[oh-my-zsh]
+	hide-status = 1
+[init]
+	defaultBranch = main
+[remote "origin"]
+	prune = true
