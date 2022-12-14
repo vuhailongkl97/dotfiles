@@ -7,6 +7,7 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+set guicursor=
 
 set hlsearch
 set number
@@ -15,6 +16,7 @@ set mouse=a
 set autoread
 set autoindent
 set tabstop=4
+set shiftwidth=4
 
 color desert
 set cursorline
