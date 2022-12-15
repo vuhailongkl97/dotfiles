@@ -39,6 +39,9 @@ nnoremap <silent> <Leader>h: :History:<CR>
 nnoremap <silent> <Leader>h/ :History/<CR>
 
 let g:airline#extensions#ale#enabled = 1
+
+let g:mkdp_browser = 'firefox'
+
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
