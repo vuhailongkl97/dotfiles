@@ -18,8 +18,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git push*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git pull*' 'fg=white,bold,bg=red')
-ZSH_HIGHLIGHT_STYLES[path]=fg=214
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=063
+#ZSH_HIGHLIGHT_STYLES[path]=fg=214
+#ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=063
 
 zstyle ':completion:*-case' menu select=5
 zstyle ':completion:*:history-words'    menu yes
@@ -86,5 +86,4 @@ export GOPATH=$HOME/working/golib
 export PATH=$PATH:$GOPATH/bin
 export GOPATH=$GOPATH:$HOME/working/go-code
 alias lg=lazygit
-
-alias x86_64-elf-ld=ld 
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
