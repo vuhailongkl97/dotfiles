@@ -13,7 +13,7 @@
           "snippetSupport": true
          },
 	  "index": {
-	    "onChange": true
+	    "onChange": false
 	  },
 	  "highlight": { "lsRanges" : true }
        }

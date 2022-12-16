@@ -18,8 +18,8 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git push*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git pull*' 'fg=white,bold,bg=red')
-#ZSH_HIGHLIGHT_STYLES[path]=fg=214
-#ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=063
+ZSH_HIGHLIGHT_STYLES[path]=fg=214
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=063
 
 zstyle ':completion:*-case' menu select=5
 zstyle ':completion:*:history-words'    menu yes
@@ -68,7 +68,6 @@ alias gd='git diff'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-/usr/bin/ibus-daemon -drx
 
 if [[ "$TERM" == "dumb" ]]
 then
