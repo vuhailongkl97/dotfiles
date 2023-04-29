@@ -15,7 +15,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10,bg=bold"
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=100'
 
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git push*' 'fg=white,bold,bg=red')
 ZSH_HIGHLIGHT_PATTERNS+=('git pull*' 'fg=white,bold,bg=red')
@@ -70,17 +70,7 @@ alias gd='git diff'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-#/usr/bin/ibus-daemon -drx
 
-if [[ "$TERM" == "dumb" ]]
-then
-    unsetopt zle
-    unsetopt prompt_cr
-    unsetopt prompt_subst
-    unfunction precmd
-    unfunction preexec
-    PS1='$ '
-fi
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
