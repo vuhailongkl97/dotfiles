@@ -18,7 +18,6 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 
-color desert
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40 gui=bold
 hi Search cterm=bold ctermfg=red ctermbg=black

@@ -30,7 +30,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ## Apply the config
 If you want to keep your configuration files, let *move* it to dotfiles folder then use below command.  
-`stow -R --adopt .`
+`stow -R --adopt . -t ${HOME} -v`
 # Note
 + ##### This is only configurations for the softwares therefore the precondition is the softwares were installed
 + For having greatest experience you should install some packages:

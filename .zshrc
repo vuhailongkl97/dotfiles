@@ -55,12 +55,6 @@ if [ "$(whoami)" = "$HOME_USER" ]; then
      export TMUX_AUTO_STARTUP=1
 fi
 
-if [ "$(whoami)" = "$WORK_USER" ]; then
-    export PATH=$PATH:/home/vhlong/install/bin
-    export PATH=$PATH:/home/vhlong/install/lib
-    export PATH=$PATH:/home/vhlong/install/include
-fi
-
 alias ls='ls --color=auto'
 alias br='git branch'
 alias gt='git diff --staged'
