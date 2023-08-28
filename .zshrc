@@ -74,6 +74,5 @@ export GOPATH=$GOPATH:$HOME/working/go-code
 alias lg=lazygit
 
 alias x86_64-elf-ld=ld 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export LC_ALL="en_US.UTF-8"
 #export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
