@@ -1,6 +1,7 @@
 source ~/.vundle.vim
 source ~/.coc.vim
 source ~/.markdown.vim
+source ~/.ezmotion.vim
 
 nnoremap <Leader>cf :<C-u>ClangFormat<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
