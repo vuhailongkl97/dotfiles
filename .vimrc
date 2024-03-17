@@ -46,6 +46,6 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 set foldmethod=syntax
-
 set incsearch
 set ignorecase
+colorscheme default
