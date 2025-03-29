@@ -55,5 +55,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 "Plug 'dense-analysis/ale'
+Plug 'ryanoasis/vim-devicons'
+
 " Initialize plugin system
 call plug#end()
