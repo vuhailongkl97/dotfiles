@@ -37,6 +37,7 @@ nnoremap <silent> <Leader>H :Helptags<CR>
 nnoremap <silent> <Leader>hh :History<CR>
 nnoremap <silent> <Leader>h: :History:<CR>
 nnoremap <silent> <Leader>h/ :History/<CR>
+nnoremap <silent> <Leader>w :Windows<CR>
 
 let g:airline#extensions#ale#enabled = 1
 
@@ -50,3 +51,12 @@ set foldmethod=syntax
 set incsearch
 set ignorecase
 colorscheme default
+let g:neovide_cursor_vfx_mode = "torpedo"
+let g:neovide_padding_top = 0
+let g:neovide_padding_bottom = 0
+let g:neovide_padding_right = 0
+let g:neovide_padding_left = 0
+
+let g:neovide_opacity = 0.95
+let g:neovide_normal_opacity = 0.95
+"set encoding=UTF-8
