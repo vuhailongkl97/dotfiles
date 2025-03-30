@@ -50,7 +50,10 @@ set foldlevel=2
 set foldmethod=syntax
 set incsearch
 set ignorecase
+set colorcolumn=80
 colorscheme default
+
+#Neovide configuration
 let g:neovide_cursor_vfx_mode = "torpedo"
 let g:neovide_padding_top = 0
 let g:neovide_padding_bottom = 0
